@@ -30,20 +30,25 @@ $ docker-compose run --rm odoo bash
 3. Por último vamos a correr odoo en el contenedor generando una nueva base para el ejercicio instalando la aplicación de real_state_management
 
 ```
-$ odoo -d ejercicio_inmobiliaria -i real_state_management --dev=xml
+$ odoo -d ejercicio_inmobiliaria -i real_state_management
 ```
+
 4. Una vez corrido los comandos en un navegador ingresar la siguiente url: 15.odoo.localhost y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
 
 
 ## Cómo hacer modificaciones en el código:
 
-1. Para cambios en archivo python (.py): bajar container (ctrl-c 2 veces) y volver a levantar. Para esto correr
+1. Para cambios en archivo python (.py): bajar container (ctrl-c 2 veces) y volver a levantar al odoo. Para esto correr
 
 ```
-$ odoo -d ejercicio_inmobiliaria --dev=all
+$ odoo -d ejercicio_inmobiliaria
 ```
 
-2. Para cambios en vistas (.xml): recargar página (f5)
+2. Para cambios en vistas (.xml):
+
+```
+$ odoo -d ejercicio_inmobiliaria --dev=xml
+```
 
 NOTA:
 
