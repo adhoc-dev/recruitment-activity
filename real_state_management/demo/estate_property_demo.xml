@@ -56,4 +56,28 @@
         <field name="tag_ids" eval="[(6, 0, [ref('real_state_management.renovated_ept'), ref('real_state_management.amenities_ept')])]"/>
     </record>
 
+    <record id="offer_house_1_1" model="estate.property.offer">
+        <field name="price">1200</field>
+        <field name="property_id" ref="house_1"/>
+        <field name="partner_id" ref="base.res_partner_12"/>
+    </record>
+
+    <record id="offer_house_1_2" model="estate.property.offer">
+        <field name="price">1400</field>
+        <field name="property_id" ref="house_1"/>
+        <field name="partner_id" ref="base.res_partner_18"/>
+    </record>
+
+    <record id="offer_house_2_1" model="estate.property.offer">
+        <field name="price">3400</field>
+        <field name="property_id" ref="house_2"/>
+        <field name="partner_id" ref="base.res_partner_12"/>
+    </record>
+
+    <record id="offer_house_2_2" model="estate.property.offer">
+        <field name="price">3700</field>
+        <field name="property_id" ref="house_2"/>
+        <field name="partner_id" ref="base.res_partner_18"/>
+    </record>
+
 </odoo>

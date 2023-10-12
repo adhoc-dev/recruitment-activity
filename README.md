@@ -5,9 +5,9 @@
 Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican los siguientes errores y requerimientos:
 
 1. El campo area total del inmueble no esta calculando el area correctamente.
-2. El botón "Refuse Offer" muestra un error al intentar usarlo.
-3. Quieren agregar un nuevo campo para "Tipo de Operacion", las opciones disponibles pueden ser Venta o Alquiler. No olvidar agregarlo en la vista formulario
-4. Quieren agregar el campo "Tipo de Propiedad" en la vista lista y que se pueda agrupar
+2. El botón "Refuse Offer" devuelve un error.
+3. Se solicita agregar el campo "Tipo de Propiedad" en la vista lista de las propiedades permitiendo agrupar y filtrar.
+4. Se solicita agregar los campos "Garage", que se pueda tildar para indicar que la propiedad tiene garage, y "Garage area", que permita indicar el area del garage y a su vez este contemplado en el área total del la propiedad. Los mismos se deben agregar en la vista formulario de las propiedades.
 
 ## Ejercicio:
 
@@ -17,10 +17,10 @@ Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican
 
 ## Cómo levantar Odoo:
 
-1. En una terminal nos dirigimos a la carpeta de odoo y luego a la versión que queremos ingresar, en este caso la versión 15. El comando a correr es
+1. En una terminal nos dirigimos a la carpeta de odoo y luego a la versión que queremos ingresar, en este caso la versión 16. El comando a correr es
 
 ```
-$ cd odoo/15
+$ cd odoo/16
 ```
 2. Luego se deberá correr el siguiente comando para levantar el contenedor de docker donde correrá nuestro odoo
 
@@ -33,7 +33,7 @@ $ docker-compose run --rm odoo bash
 $ odoo -d ejercicio_inmobiliaria -i real_state_management
 ```
 
-4. Una vez corrido los comandos en un navegador ingresar la siguiente url: 15.odoo.localhost y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
+4. Una vez corrido los comandos en un navegador ingresar la siguiente url: 16.odoo.localhost y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
 
 
 ## Cómo hacer modificaciones en el código:
@@ -59,4 +59,4 @@ git config --global user.email <tu-email>
 git config --global user.name <tu-number>
 ```
 
-2. Este es el doc de referencia de ayuda de odoo https://www.odoo.com/documentation/15.0/developer/reference/backend/orm.html
+2. Este es el doc de referencia de ayuda de odoo https://www.odoo.com/documentation/16.0/developer/reference/backend/orm.html

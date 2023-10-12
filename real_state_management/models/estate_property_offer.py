@@ -20,7 +20,7 @@ class EstatePropertyOffer(models.Model):
 
     def refuse_offer(self):
         """ Permite marcar la oferta como rechazada """
-        self.status = 'refusedd'
+        self.state = 'refused'
 
 """     @api.onchange('date_deadline')
     def _inverse_date_deadline(self):
