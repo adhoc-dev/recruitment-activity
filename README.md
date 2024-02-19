@@ -6,14 +6,13 @@ Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican
 
 1. El campo area total del inmueble no esta calculando el area correctamente.
 2. El botón "Refuse Offer" devuelve un error.
-3. Se solicita agregar el campo "Tipo de Propiedad" en la vista lista de las propiedades permitiendo agrupar y filtrar.
+3. Se solicita poder agrupar por el campo "Tipo de Propiedad" en la vista lista de propiedades.
 4. Se solicita agregar los campos "Garage", que se pueda tildar para indicar que la propiedad tiene garage, y "Garage area", que permita indicar el area del garage y a su vez este contemplado en el área total del la propiedad. Los mismos se deben agregar en la vista formulario de las propiedades.
 
 ## Ejercicio:
 
-1. Hacer fork de este repositorio (utilizar http para descargarlo en local)
+1. Clonar este repositorio de manera local (utilizar http) en "~/odoo/16/data/custom/repositories"
 2. Resolver el enunciado cada punto en un commit diferente.
-3. Subir resultado a GitHub y pasarnos un correo con la url de tu fork/branch a bz@adhoc.com.ar
 
 ## Cómo levantar Odoo:
 
@@ -33,7 +32,7 @@ $ docker-compose run --rm odoo bash
 $ odoo -d ejercicio_inmobiliaria -i real_state_management
 ```
 
-4. Una vez corrido los comandos en un navegador ingresar la siguiente url: 16.odoo.localhost y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
+4. Una vez corrido los comandos en un navegador ingresar la siguiente url: [](http://16.odoo.localhost) y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
 
 
 ## Cómo hacer modificaciones en el código:
@@ -44,10 +43,15 @@ $ odoo -d ejercicio_inmobiliaria -i real_state_management
 $ odoo -d ejercicio_inmobiliaria
 ```
 
-2. Para cambios en vistas (.xml):
+2. Para visualizar los cambios en vistas (.xml) sin necesidad de re-cargar odoo:
 
 ```
 $ odoo -d ejercicio_inmobiliaria --dev=xml
+```
+
+3. Si se hacen modificaciones en la estructura de datos (campos y/o modelos), se debe recargar odoo llamando a actualizar el módulo. Por ej:
+```
+$ odoo -d ejercicio_inmobiliaria -u real_state_management
 ```
 
 NOTA:
@@ -56,7 +60,7 @@ NOTA:
 
 ```
 git config --global user.email <tu-email>
-git config --global user.name <tu-number>
+git config --global user.name <tu-nombre>
 ```
 
 2. Este es el doc de referencia de ayuda de odoo https://www.odoo.com/documentation/16.0/developer/reference/backend/orm.html
