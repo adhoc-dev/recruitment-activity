@@ -93,6 +93,7 @@
                 <filter string="Available" name="available" domain="[('state', 'in', ['new', 'offer_received'])]"/>
                 <group>
                 <filter string="Postcode" name="groupby_postcode" context="{'group_by': 'postcode'}"/>
+                <filter string="Tipo de propiedad" name="groupby_tipo_de_propiedad" context="{'group_by': 'property_type_id'}"/>
                 </group>
             </search>
         </field>
