@@ -59,6 +59,8 @@
                                 <field name="garden"/>
                                 <field name="garden_area" string="Garden Area (sqm)" attrs="{'invisible': [('garden', '=', False)]}"/>
                                 <field name="garden_orientation" attrs="{'invisible': [('garden', '=', False)]}"/>
+                                <field name="garage"/>
+                                <field name="garage_area" string="Garage Area (sqm)" attrs="{'invisible': [('garage', '=', False)]}"/>
                                 <field name="total_area" string="Total area (sqm)"/>
                                 <field name="state"/>
                             </group>

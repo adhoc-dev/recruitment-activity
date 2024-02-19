@@ -16,6 +16,8 @@ class EstateProperty(models.Model):
     facades = fields.Integer()
     garden = fields.Boolean()
     garden_area = fields.Integer()
+    garage = fields.Boolean()
+    garage_area = fields.Integer()
     active = fields.Boolean(default=True)
     garden_orientation = fields.Selection([('north','North'),('south','South'),('east','East'),('west','West')])
     state = fields.Selection([('new', 'New'), ('offer_received', 'Offer Received'), ('offer_accepted','Offer Accepted'), ('sold', 'Sold'), ('canceled', 'Canceled')], required=True, copy=False, default='new')
@@ -30,7 +32,7 @@ class EstateProperty(models.Model):
     @api.depends('garden_area', 'living_area')
     def _compute_total_area(self):
         for rec in self:
-            rec.total_area = self.living_area + self.garden_area
+            rec.total_area = self.living_area + self.garden_area + self.garage_area
 
     @api.depends('offer_ids.price')
     def _compute_best_price(self):
