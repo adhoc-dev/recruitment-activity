@@ -59,6 +59,8 @@
                                 <field name="garden"/>
                                 <field name="garden_area" string="Garden Area (sqm)" attrs="{'invisible': [('garden', '=', False)]}"/>
                                 <field name="garden_orientation" attrs="{'invisible': [('garden', '=', False)]}"/>
+                                <field name="garage"/>
+                                <field name="garage_area" string="Garage Area (sqm)" attrs="{'invisible': [('garage', '=', False)]}"/>
                                 <field name="total_area" string="Total area (sqm)"/>
                                 <field name="state"/>
                             </group>
@@ -93,6 +95,7 @@
                 <filter string="Available" name="available" domain="[('state', 'in', ['new', 'offer_received'])]"/>
                 <group>
                 <filter string="Postcode" name="groupby_postcode" context="{'group_by': 'postcode'}"/>
+                <filter string="Tipo de propiedad" name="groupby_tipo_de_propiedad" context="{'group_by': 'property_type_id'}"/>
                 </group>
             </search>
         </field>
