@@ -32,7 +32,7 @@ $ docker-compose run --rm odoo bash
 $ odoo -d ejercicio_inmobiliaria -i real_state_management
 ```
 
-4. Una vez corrido los comandos en un navegador ingresar la siguiente url: [](http://16.odoo.localhost) y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
+4. Una vez corrido los comandos en un navegador ingresar la siguiente url: [http://16.odoo.localhost](http://16.odoo.localhost) y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
 
 
 ## Cómo hacer modificaciones en el código:
