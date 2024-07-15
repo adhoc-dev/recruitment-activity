@@ -20,6 +20,8 @@ Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican
 
 ```
 $ cd odoo/16-practicas
+$ cd odoo/16-ejercicios
+$ cd odoo/16
 ```
 2. Luego se deberá correr el siguiente comando para levantar el contenedor de docker donde correrá nuestro odoo
 
