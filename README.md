@@ -19,8 +19,6 @@ Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican
 1. En una terminal nos dirigimos a la carpeta de odoo y luego a la versión que queremos ingresar, en este caso la versión 16. El comando a correr es
 
 ```
-$ cd odoo/16-practicas
-$ cd odoo/16-ejercicios
 $ cd odoo/16
 ```
 2. Luego se deberá correr el siguiente comando para levantar el contenedor de docker donde correrá nuestro odoo
