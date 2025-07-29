@@ -8,6 +8,30 @@ Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican
 2. El botón "Refuse Offer" devuelve un error.
 3. Se solicita poder agrupar por el campo "Tipo de Propiedad" en la vista lista de propiedades.
 4. Se solicita agregar los campos "Garage", que se pueda tildar para indicar que la propiedad tiene garage, y "Garage area", que permita indicar el area del garage y a su vez este contemplado en el área total del la propiedad. Los mismos se deben agregar en la vista formulario de las propiedades.
+5. Implementación de Controladores (API/Endpoints)
+  Desarrollar los siguientes endpoints:
+
+  Endpoint 1: Listar propiedades no vendidas.
+    Debe devolver información como:
+
+      Nombre de la propiedad
+      Vendedor
+      Código postal
+      Precio
+      Metros cuadrados
+      Otros campos relevantes
+
+  Endpoint 2: Crear o actualizar una propiedad.
+    Según el identificador recibido:
+    Si la propiedad existe, actualizar algunos campos seleccionados (a elección).
+    Si no existe, crear un nuevo registro con los datos provistos.
+
+  Endpoint 3: Generar una oferta para una propiedad.
+    Recibe como parámetro el identificador de la propiedad y los datos necesarios para completar la oferta.
+    Debe devolver el mensaje: "Oferta creada" si la operación fue exitosa.
+
+6. Desarrollo de Reporte de Propiedades Vendidas
+Crear un reporte que muestre todas las propiedades vendidas en el último año, agrupadas por vendedor.
 
 ## Ejercicio:
 
