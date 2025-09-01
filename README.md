@@ -43,7 +43,7 @@ Crear un reporte que muestre todas las propiedades vendidas en el último año, 
 1. En una terminal nos dirigimos a la carpeta de odoo y luego a la versión que queremos ingresar, en este caso la versión 16. El comando a correr es
 
 ```
-$ cd odoo/16
+$ cd odoo/18
 ```
 2. Luego se deberá correr el siguiente comando para levantar el contenedor de docker donde correrá nuestro odoo
 
@@ -56,7 +56,7 @@ $ docker-compose run --rm odoo bash
 $ odoo -d ejercicio_inmobiliaria -i real_state_management
 ```
 
-4. Una vez corrido los comandos en un navegador ingresar la siguiente url: [http://16.odoo.localhost](http://16.odoo.localhost) y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
+4. Una vez corrido los comandos en un navegador ingresar la siguiente url: [http://16.odoo.localhost](http://18.odoo.localhost) y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
 
 
 ## Cómo hacer modificaciones en el código:
