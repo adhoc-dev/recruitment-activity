@@ -35,12 +35,12 @@ Crear un reporte que muestre todas las propiedades vendidas en el último año, 
 
 ## Ejercicio:
 
-1. Clonar este repositorio de manera local (utilizar http) en "~/odoo/16/data/custom/repositories"
+1. Clonar este repositorio de manera local (utilizar http) en "~/odoo/18/data/custom/repositories"
 2. Resolver el enunciado cada punto en un commit diferente.
 
 ## Cómo levantar Odoo:
 
-1. En una terminal nos dirigimos a la carpeta de odoo y luego a la versión que queremos ingresar, en este caso la versión 16. El comando a correr es
+1. En una terminal nos dirigimos a la carpeta de odoo y luego a la versión que queremos ingresar, en este caso la versión 18. El comando a correr es
 
 ```
 $ cd odoo/18
@@ -56,7 +56,7 @@ $ docker-compose run --rm odoo bash
 $ odoo -d ejercicio_inmobiliaria -i real_state_management
 ```
 
-4. Una vez corrido los comandos en un navegador ingresar la siguiente url: [http://16.odoo.localhost](http://18.odoo.localhost) y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
+4. Una vez corrido los comandos en un navegador ingresar la siguiente url: [http://18.odoo.localhost](http://18.odoo.localhost) y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
 
 
 ## Cómo hacer modificaciones en el código:
@@ -87,4 +87,4 @@ git config --global user.email <tu-email>
 git config --global user.name <tu-nombre>
 ```
 
-2. Este es el doc de referencia de ayuda de odoo https://www.odoo.com/documentation/16.0/developer/reference/backend/orm.html
+2. Este es el doc de referencia de ayuda de odoo https://www.odoo.com/documentation/18.0/developer/reference/backend/orm.html
