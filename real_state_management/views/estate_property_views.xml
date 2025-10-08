@@ -59,6 +59,8 @@
                                 <field name="garden"/>
                                 <field name="garden_area" string="Garden Area (sqm)" invisible="not garden"/>
                                 <field name="garden_orientation" invisible="not garden"/>
+                                <field name="garage"/>
+                                <field name="garage_area" string="Garage Area (sqm)" invisible="not garage"/>
                                 <field name="total_area" string="Total area (sqm)"/>
                                 <field name="state"/>
                             </group>
