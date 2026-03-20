@@ -8,7 +8,7 @@ Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican
 2. El botón "Refuse Offer" devuelve un error.
 3. Se solicita poder agrupar por el campo "Tipo de Propiedad" en la vista lista de propiedades.
 4. Se solicita agregar los campos "Garage", que se pueda tildar para indicar que la propiedad tiene garage, y "Garage area", que permita indicar el area del garage y a su vez este contemplado en el área total del la propiedad. Los mismos se deben agregar en la vista formulario de las propiedades.
-5. Se solicita agregar el campo best_price que se compute si se modifica alguna oferta y devuelva la mejor de ellas
+5. Se solicita agregar un campo computado best_price que se actualice automáticamente al crear o modificar ofertas, mostrando el valor de la oferta más alta.
 6. Implementación de Controladores (API/Endpoints)
   Desarrollar los siguientes endpoints:
 
@@ -31,34 +31,11 @@ Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican
     Recibe como parámetro el identificador de la propiedad y los datos necesarios para completar la oferta.
     Debe devolver el mensaje: "Oferta creada" si la operación fue exitosa.
 
-7. Desarrollo de Reporte de Propiedades Vendidas
-Crear un reporte que muestre todas las propiedades vendidas en el último año, agrupadas por vendedor.
 
 ## Ejercicio:
 
 1. Clonar este repositorio de manera local (utilizar http) en "~/odoo/18/data/custom/repositories"
 2. Resolver el enunciado cada punto en un commit diferente.
-
-## Cómo levantar Odoo:
-
-1. En una terminal nos dirigimos a la carpeta de odoo y luego a la versión que queremos ingresar, en este caso la versión 18. El comando a correr es
-
-```
-cd odoo/18
-```
-2. Luego se deberá correr el siguiente comando para levantar el contenedor de docker donde correrá nuestro odoo
-
-```
-docker-compose run --rm odoo bash
-```
-3. Por último vamos a correr odoo en el contenedor generando una nueva base para el ejercicio instalando la aplicación de real_state_management
-
-```
-odoo -d ejercicio_inmobiliaria -i real_state_management
-```
-
-4. Una vez corrido los comandos en un navegador ingresar la siguiente url: [http://18.odoo.localhost](http://18.odoo.localhost) y tener en cuenta que tanto el usuario como contraseña de acceso es "admin".
-
 
 ## Cómo hacer modificaciones en el código:
 
