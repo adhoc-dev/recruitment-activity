@@ -1,7 +1,7 @@
 {
     "name": "Real State Management",
     "version": "18.0.1.0.0",
-    "depends": ["base"],
+    "depends": ["base", "account"],
     "license": "LGPL-3",
     "data": [
         "data/estate.property.type.csv",
@@ -13,6 +13,9 @@
         "views/estate_property_tag_views.xml",
         "views/estate_property_offer_views.xml",
         "views/estate_menus.xml",
+    ],
+    "demo": [
+        "demo/account_demo.xml",
     ],
     "installable": True,
     "auto_install": False,

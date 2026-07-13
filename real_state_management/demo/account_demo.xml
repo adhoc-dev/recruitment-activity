@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <!--
+        Data demo contable para la actividad.
+
+        Dispara la generacion de asientos de ejemplo. Uno de ellos queda
+        deliberadamente descuadrado (debe != haber) para que quien resuelve la
+        actividad detecte la inconsistencia contable.
+
+        Ver: models/account_move.py -> _generate_estate_accounting_demo
+    -->
+    <function model="account.move" name="_generate_estate_accounting_demo"/>
+
+</odoo>

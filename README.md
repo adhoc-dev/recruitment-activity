@@ -31,6 +31,11 @@ Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican
     Recibe como parámetro el identificador de la propiedad y los datos necesarios para completar la oferta.
     Debe devolver el mensaje: "Oferta creada" si la operación fue exitosa.
 
+7. Revisión contable de la data.
+  El módulo carga (como data demo) algunos asientos contables de ejemplo en Contabilidad > Asientos contables.
+  Se pide revisar esa información con criterio contable, detectar cualquier inconsistencia y plantearla:
+  ¿los asientos son correctos? ¿alguno no cierra? ¿qué preguntarías o cómo lo corregirías?
+
 
 ## Ejercicio:
 
