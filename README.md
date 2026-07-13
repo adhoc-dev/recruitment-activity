@@ -31,6 +31,16 @@ Un cliente de Adhoc tiene instalado el módulo real_state_management y notifican
     Recibe como parámetro el identificador de la propiedad y los datos necesarios para completar la oferta.
     Debe devolver el mensaje: "Oferta creada" si la operación fue exitosa.
 
+7. Revisión contable de la data.
+  El módulo carga algunos asientos contables de ejemplo en Contabilidad > Asientos contables.
+  Para ubicarlos, filtrar por los asientos cuya **referencia** sea "Actividad".
+  Se pide revisar esa información con criterio contable, detectar cualquier inconsistencia y plantearla:
+
+    a. ¿Los asientos están correctamente registrados?
+    b. Revisión del IVA: uno de los asientos corresponde a una venta gravada. Verificar que el IVA
+       declarado se corresponda con la base imponible y con la alícuota indicada. ¿El importe del IVA
+       es correcto? Si no lo es, indicar cuál sería el valor esperado y cómo debería quedar el asiento.
+
 
 ## Ejercicio:
 
