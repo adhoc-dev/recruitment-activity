@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <!--
+        Data contable para la actividad.
+
+        Dispara la generacion de los asientos de ejemplo. Uno queda
+        deliberadamente descuadrado (debe != haber) y otro tiene el IVA mal
+        liquidado, para que quien resuelve la actividad detecte las
+        inconsistencias contables con criterio.
+
+        noupdate="1": el <function> solo corre en la instalacion inicial. Asi los
+        asientos NO se duplican al recargar con `-u real_state_management`.
+
+        Ver: models/account_move.py -> _generate_estate_accounting_data
+    -->
+    <data noupdate="1">
+        <function model="account.move" name="_generate_estate_accounting_data"/>
+    </data>
+
+</odoo>
