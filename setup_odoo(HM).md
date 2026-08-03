@@ -1,4 +1,3 @@
-# Para Hiring Managers
 
 ## Cómo levantar Odoo:
 
